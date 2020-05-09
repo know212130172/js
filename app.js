@@ -347,7 +347,7 @@ function reurl(){
 
 new APlayer({
     container: document.getElementById('aplayer'),
-    autoplay: false,
+    autoplay: true,
     loop: 'all',
     volume: 1,
     listFolded: true,
@@ -356,7 +356,7 @@ new APlayer({
     audio: [
         {
             url: '${url}',
-			name: 'Rdio',
+			name: 'Radio',
             cover: 'cover1.jpg',
             theme: '#ebd0c2'	
         }
