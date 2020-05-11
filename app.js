@@ -328,20 +328,7 @@ function file_audio(path){
 	var url = window.location.origin + path;
 //	var index = url.substring(url.lastIndexOf('/') + 1).replace(/\s/g,'%20');
 	var content = `
-<script>
 
-function reurl(){
-             url = location.href;
-             var times = url.split("?t=");
-             if( url.indexOf("r=")==-1 ){
-                 
-                 self.location.replace(url);
-             }
-         }
-         window.onload = function(){
-             setTimeout("reurl()",100);//0.1秒后刷新
-         }
-</script>
 <script>
  
 
@@ -356,8 +343,7 @@ new APlayer({
     audio: [
         {
             url: '${url}',
-			name: 'Radio',
-            cover: 'cover1.jpg',
+	    name: 'Radio',
             theme: '#ebd0c2'	
         }
     ]
