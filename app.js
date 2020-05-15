@@ -328,22 +328,18 @@ function file_audio(path){
 	var url = window.location.origin + path;
 //	var index = url.substring(url.lastIndexOf('/') + 1).replace(/\s/g,'%20');
 	var content = `
-
+<audio class="mdui-center" preload controls>
+	  <source src="${url}"">
+	</audio>
 <script>
  
 
 new APlayer({
     container: document.getElementById('aplayer'),
-    autoplay: true,
-    loop: 'all',
-    volume: 1,
-    listFolded: true,
-    listMaxHeight: 60,
-	mutex: true,
+    autoplay: false,
     audio: [
         {
             url: '${url}',
-	    name: 'Radio',
             theme: '#ebd0c2'	
         }
     ]
