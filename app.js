@@ -340,7 +340,11 @@ new APlayer({
     audio: [
         {
             url: '${url}',
-            theme: '#ebd0c2'	
+	    preload: 'auto',
+	    autoplay: true,
+	    volume: 1.0,
+            theme: '#ebd0c2'
+	    
         }
     ]
 });
